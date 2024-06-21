@@ -7,8 +7,16 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #0271f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 body > header {
@@ -46,6 +54,7 @@ main {
 main > section {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -55,6 +64,11 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+article > p {
+  font-size: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -87,4 +101,20 @@ form#search-games-area > button[type="submit"] {
   border-radius: 0 2rem 2rem 0;
   border: 0;
   background-color: #ee626b;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+main > section > article {
+  width: 60%;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #0271f7;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
