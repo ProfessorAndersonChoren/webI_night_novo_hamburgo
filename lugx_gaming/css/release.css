@@ -7,10 +7,58 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
-    background-color: #0271F7;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0271f7;
+  padding: 1rem;
+}
+
+nav > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+
+header > img {
+  height: 60px;
+}
+
+a.action-button {
+  background-color: #ee626b;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+article.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+div.card {
+  border-radius: 2rem;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.card > h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
