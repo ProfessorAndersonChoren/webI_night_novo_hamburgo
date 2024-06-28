@@ -26,7 +26,8 @@ header {
   padding: 1rem;
 }
 
-nav > a {
+nav > a,
+a.action-button {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
@@ -61,4 +62,43 @@ div.card {
 div.card > h2 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+main > article:nth-child(2),
+main > section:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > article:nth-child(2) > h3 {
+  color: #ee626b;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+main > section:nth-child(3) {
+  margin: 1rem;
+}
+
+main > section:nth-child(3) > article > img {
+  height: 150px;
+  border-radius: 1rem;
+}
+
+main > section:nth-child(3) div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+footer {
+  height: 10vh; /* Equivale a 10% da altura tela */
+  background-color: #0271f7;
+  padding: 1rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
 }
