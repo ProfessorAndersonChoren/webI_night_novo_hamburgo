@@ -30,40 +30,18 @@ header > nav {
 }
 
 header > nav > a,
-a.action-button {
+.action-button {
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
 }
 
-a.action-button {
+.action-button {
   background-color: #ee626b;
   padding: 1rem 2rem;
   border-radius: 2rem;
-}
-
-main {
-  margin: 57px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 2rem;
-}
-
-main > article {
-  width: 250px;
-}
-
-main > article > img {
-  height: 150px;
-  border-radius: 1rem;
-  object-fit: cover; /* Ajustar a proporção da imagem */
-  margin-bottom: 1rem;
-}
-
-main > article > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border: 0;
+  outline: 0;
 }
 
 footer {
@@ -75,4 +53,57 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* CSS Padrão (Acima) */
+
+main {
+  display: flex;
+  padding: 4rem;
+}
+
+iframe {
+  width: 360px;
+  height: 360px;
+  border: 0;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+  color: #ee626b;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+aside {
+  margin-left: 3.37rem;
+}
+
+input,
+textarea {
+  background-color: #f7f7f7;
+  color: #4d4d4d;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0;
+  outline: none;
+  font-size: 0.75rem;
+}
+
+textarea{
+  height: 6.25rem;
 }
