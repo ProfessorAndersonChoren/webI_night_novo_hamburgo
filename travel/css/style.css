@@ -1,0 +1,70 @@
+/* Mobile First */
+/* Conceitos base e mobile (Celular, tablet e desktop) */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  width: 80px;
+}
+
+nav > a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+article > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+article > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+/* Conceitos (tablet e desktop) */
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav > a {
+    display: inline-block;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Conceitos Desktop */
+@media screen and (min-width: 1280px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Regra para impressão */
+@media print {
+  .hide-print {
+    display: none;
+  }
+}
